@@ -419,7 +419,7 @@
             <slipstream min-collect-time="*1.2" add-power="*0.5"
                         max-speed-increase="*0.5" duration-factor="*0.5" />
         </characteristic>
-		<characteristic name="handicap">
+	<characteristic name="handicap">
 			<engine power="*0.2" max-speed="*0.2" brake-factor="*0.1" brake-time-increase="*0.12" max-speed-reverse-ratio="*0.1" />
 			<skid time-till-bonus="*1.2 *1.0" bonus-speed="*0.2 *0.1" bonus-force="*0.2 *0.2" />
 			<bubblegum duration="*1.2" torque="*1.2" />
@@ -431,6 +431,6 @@
 			<nitro engine-force="*0.1" max-speed-increase="*0.2" max="*0.1" />
 			<slipstream min-collect-time="*1.2" add-power="*0.2"
                         max-speed-increase="*0.2" duration-factor="*0.2" />
-		</characteristic>
+	</characteristic>
     </player-characteristics>
 </characteristics>
