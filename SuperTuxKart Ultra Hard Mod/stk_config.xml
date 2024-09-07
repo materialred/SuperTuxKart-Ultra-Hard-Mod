@@ -96,7 +96,7 @@
 
   <!-- Startup information.
        Penalty: Penalty time if a kart accelerates before SET. -->
-  <startup penalty="1" />
+  <startup penalty="5" />
 
   <!-- How often a news message is going to be displayed before
        it will be ignored. -->
@@ -348,7 +348,7 @@
     <ai>
         <easy   time-full-steer="0.1"
                 straight-length-for-zipper="35"
-                use-slipstream="false"
+                use-slipstream="true"
                 disable-slipstream-usage="true"
                 shield-incoming-radius="0"
                 false-start-probability="0.08"
@@ -367,7 +367,7 @@
                 />
         <medium time-full-steer="0.1"
                 straight-length-for-zipper="35"
-                use-slipstream="false"
+                use-slipstream="true"
                 disable-slipstream-usage="false"
                 shield-incoming-radius="10"
                 false-start-probability="0.04"
@@ -376,8 +376,8 @@
                 item-skill="2"
                 collect-avoid-items="true"
                 handle-bomb="false"
-                first-speed-cap="20:1.0 60:0.9 100:0.85"
-                last-speed-cap="-50:0.94 0:0.85 100:0.75"
+                first-speed-cap="0:1.0"
+                last-speed-cap="0:1.0"
                 max-item-angle="0.7" max-item-angle-high-speed="0.3"
                 bad-item-closeness="6"
                 collect-item-probability="-10:1.0 0:0"
@@ -391,16 +391,16 @@
                 shield-incoming-radius="8"
                 false-start-probability="0.01"
                 min-start-delay="0.15" max-start-delay="0.28"
-                nitro-usage="2"
-                item-skill="3"
+                nitro-usage="3"
+                item-skill="4"
                 collect-avoid-items="true"
                 handle-bomb="true"
-                first-speed-cap="50:1.0 150:0.9"
-                last-speed-cap="0:0.96 80:0.8"
+                first-speed-cap="0:1.0"
+                last-speed-cap="0:1.0"
                 max-item-angle="0.7" max-item-angle-high-speed="0.3"
                 bad-item-closeness="6"
                 collect-item-probability="10:1.0 20:0"
-                rb-skid-probability="-50:1.0 -20:0.7 20:0.2 50:0.0"
+                rb-skid-probability="0:1.0"
                 skidding-threshold="2.0"
                 />
         <best   time-full-steer="0.1"
