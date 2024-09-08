@@ -97,8 +97,8 @@
             max-speed-reverse-ratio is the percentage of max speed for reverse
                 gear.
           -->
-        <engine power="950" max-speed="25" generic-max-speed="25" brake-factor="15"
-                brake-time-increase="6" max-speed-reverse-ratio="0.65" />
+        <engine power="6650" max-speed="175" generic-max-speed="175" brake-factor="15"
+                brake-time-increase="6" max-speed-reverse-ratio="0.5" />
 
         <!-- Simulated gears
             switch-ratio defines at what ratio of the maximum
@@ -257,7 +257,7 @@
             squash-duration: How long a kart will remain squashed.
             squash-slowdown: Percentage of max speed that a kart is
                 restricted to. -->
-        <swatter duration="10" distance="9" squash-duration="5"
+        <swatter duration="10" distance="8" squash-duration="5"
                  squash-slowdown="0.5" />
 
         <!-- Plunger and rubber band handling
@@ -289,7 +289,7 @@
                 releasing them on the ground after a rescue. Used to avoid
                 resetting karts into the track. Not sure if this is still
                 necessary. -->
-        <rescue vert-offset="0.0" duration="1.2" height="2" />
+        <rescue vert-offset="0.0" duration="1.5" height="2" />
 
         <!-- Explosion
             duration: how long it takes before the kart can drive again (this
@@ -298,7 +298,7 @@
                 after being hit by an explosion.
             radius: Kart closer to this value will be affected by
                 an explosion as well.  -->
-        <explosion duration="5" radius="12"
+        <explosion duration="1.5" radius="12"
                    invulnerability-time="0" />
 
         <!-- Nitro
@@ -315,7 +315,7 @@
             fade-out-time: Duration during which the increased maximum
                 speed due to nitro fades out.
             max: How much nitro a kart can store. -->
-        <nitro engine-force="600" engine-mult="2.4" consumption="1.5"
+        <nitro engine-force="300" engine-mult="2.4" consumption="1.0"
                small-container="1" big-container="3"
                max-speed-increase="5" duration="1" fade-out-time="2.4" max="20" />
 
@@ -346,20 +346,19 @@
     <!-- The different difficulties (like easy, medium, hard) -->
     <difficulties>
         <characteristic name="easy">
-            <engine power="*1.4" max-speed="*1.2" generic-max-speed="*1.2" />
+            <engine power="*0.34" max-speed="*0.34" generic-max-speed="*0.34" />
             <plunger in-face-time="6" />
         </characteristic>
         <characteristic name="medium">
-            <engine power="*2.49" max-speed="*2.4" generic-max-speed="*2.4" />
+            <engine power="*0.51" max-speed="*0.41" generic-max-speed="*0.51" />
             <plunger in-face-time="4" />
         </characteristic>
         <characteristic name="hard">
-            <engine power="*3.68" max-speed="*3.68" generic-max-speed="*3.68" />
+            <engine power="*0.71" max-speed="*0.61" generic-max-speed="*0.71" />
         </characteristic>
-        <!-- This doesn't need to be changed because the most fast/heavy/extreme
-            values should also be the default ones. -->
+
         <characteristic name="best" />
-		    <engine power="*7.36" max-speed="*7.36" generic-max-speed="*7.36" />
+
     </difficulties>
 
     <!-- The different kart types, that can be specified in the kart.xml file -->
@@ -419,7 +418,7 @@
             <slipstream min-collect-time="*1.2" add-power="*0.5"
                         max-speed-increase="*0.5" duration-factor="*0.5" />
         </characteristic>
-	<characteristic name="handicap">
+		<characteristic name="handicap">
 			<engine power="*0.2" max-speed="*0.2" brake-factor="*0.1" brake-time-increase="*0.12" max-speed-reverse-ratio="*0.1" />
 			<skid time-till-bonus="*1.2 *1.0" bonus-speed="*0.2 *0.1" bonus-force="*0.2 *0.2" />
 			<bubblegum duration="*1.2" torque="*1.2" />
@@ -431,6 +430,6 @@
 			<nitro engine-force="*0.1" max-speed-increase="*0.2" max="*0.1" />
 			<slipstream min-collect-time="*1.2" add-power="*0.2"
                         max-speed-increase="*0.2" duration-factor="*0.2" />
-	</characteristic>
+		</characteristic>
     </player-characteristics>
 </characteristics>
